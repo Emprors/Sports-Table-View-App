@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		0036534224084B1400314783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036534124084B1400314783 /* AppDelegate.swift */; };
 		0036534424084B1400314783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036534324084B1400314783 /* SceneDelegate.swift */; };
-		0036534624084B1400314783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036534524084B1400314783 /* ViewController.swift */; };
 		0036534924084B1400314783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0036534724084B1400314783 /* Main.storyboard */; };
 		0036534B24084B1600314783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0036534A24084B1600314783 /* Assets.xcassets */; };
 		0036534E24084B1600314783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0036534C24084B1600314783 /* LaunchScreen.storyboard */; };
+		0036535724084B8000314783 /* sports_week_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 0036535624084B8000314783 /* sports_week_2.json */; };
+		0036535924084B8500314783 /* sports_week_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0036535824084B8500314783 /* sports_week_1.json */; };
+		0036535F24084D9700314783 /* WeekTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036535E24084D9700314783 /* WeekTableViewController.swift */; };
+		0036536124084F9900314783 /* SportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036536024084F9900314783 /* SportModel.swift */; };
+		0036536E2408687D00314783 /* SportsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036536D2408687D00314783 /* SportsTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0036533E24084B1400314783 /* Sports Table View App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sports Table View App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0036534124084B1400314783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0036534324084B1400314783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0036534524084B1400314783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0036534824084B1400314783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0036534A24084B1600314783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0036534D24084B1600314783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0036534F24084B1600314783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0036535624084B8000314783 /* sports_week_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sports_week_2.json; sourceTree = "<group>"; };
+		0036535824084B8500314783 /* sports_week_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sports_week_1.json; sourceTree = "<group>"; };
+		0036535E24084D9700314783 /* WeekTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableViewController.swift; sourceTree = "<group>"; };
+		0036536024084F9900314783 /* SportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportModel.swift; sourceTree = "<group>"; };
+		0036536D2408687D00314783 /* SportsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		0036534024084B1400314783 /* Sports Table View App */ = {
 			isa = PBXGroup;
 			children = (
-				0036534124084B1400314783 /* AppDelegate.swift */,
-				0036534324084B1400314783 /* SceneDelegate.swift */,
-				0036534524084B1400314783 /* ViewController.swift */,
-				0036534724084B1400314783 /* Main.storyboard */,
+				0036535D24084BD600314783 /* Model */,
+				0036535A24084B9400314783 /* View */,
+				0036535C24084BBC00314783 /* Controllers */,
+				0036535524084B5F00314783 /* Supporting files */,
+				0036535B24084BAD00314783 /* AppDelegate */,
 				0036534A24084B1600314783 /* Assets.xcassets */,
-				0036534C24084B1600314783 /* LaunchScreen.storyboard */,
 				0036534F24084B1600314783 /* Info.plist */,
 			);
 			path = "Sports Table View App";
+			sourceTree = "<group>";
+		};
+		0036535524084B5F00314783 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				0036535824084B8500314783 /* sports_week_1.json */,
+				0036535624084B8000314783 /* sports_week_2.json */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		0036535A24084B9400314783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0036534C24084B1600314783 /* LaunchScreen.storyboard */,
+				0036534724084B1400314783 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0036535B24084BAD00314783 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0036534324084B1400314783 /* SceneDelegate.swift */,
+				0036534124084B1400314783 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0036535C24084BBC00314783 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0036535E24084D9700314783 /* WeekTableViewController.swift */,
+				0036536D2408687D00314783 /* SportsTableController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0036535D24084BD600314783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0036536024084F9900314783 /* SportModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0036534E24084B1600314783 /* LaunchScreen.storyboard in Resources */,
+				0036535724084B8000314783 /* sports_week_2.json in Resources */,
 				0036534B24084B1600314783 /* Assets.xcassets in Resources */,
+				0036535924084B8500314783 /* sports_week_1.json in Resources */,
 				0036534924084B1400314783 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0036534624084B1400314783 /* ViewController.swift in Sources */,
+				0036536124084F9900314783 /* SportModel.swift in Sources */,
 				0036534224084B1400314783 /* AppDelegate.swift in Sources */,
 				0036534424084B1400314783 /* SceneDelegate.swift in Sources */,
+				0036536E2408687D00314783 /* SportsTableController.swift in Sources */,
+				0036535F24084D9700314783 /* WeekTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

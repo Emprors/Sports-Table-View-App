@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SportsTableController.swift
 //  Sports Table View App
 //
 //  Created by Bouna Anour NDIAYE on 2020-02-27.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SportsTableViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    
+    
 }
-
