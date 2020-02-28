@@ -17,6 +17,9 @@
 		0036535F24084D9700314783 /* WeekTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036535E24084D9700314783 /* WeekTableViewController.swift */; };
 		0036536124084F9900314783 /* SportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036536024084F9900314783 /* SportModel.swift */; };
 		0036536E2408687D00314783 /* SportsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036536D2408687D00314783 /* SportsTableController.swift */; };
+		003653702408AB4600314783 /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036536F2408AB4600314783 /* SportsTableViewCell.swift */; };
+		00365373240966FF00314783 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00365372240966FF00314783 /* GamesTableViewCell.swift */; };
+		00365375240967C800314783 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00365374240967C800314783 /* GamesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		0036535E24084D9700314783 /* WeekTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableViewController.swift; sourceTree = "<group>"; };
 		0036536024084F9900314783 /* SportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportModel.swift; sourceTree = "<group>"; };
 		0036536D2408687D00314783 /* SportsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableController.swift; sourceTree = "<group>"; };
+		0036536F2408AB4600314783 /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
+		00365372240966FF00314783 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		00365374240967C800314783 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,10 @@
 		0036535C24084BBC00314783 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				00365371240966E100314783 /* Cell */,
 				0036535E24084D9700314783 /* WeekTableViewController.swift */,
 				0036536D2408687D00314783 /* SportsTableController.swift */,
+				00365374240967C800314783 /* GamesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +125,15 @@
 				0036536024084F9900314783 /* SportModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		00365371240966E100314783 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				00365372240966FF00314783 /* GamesTableViewCell.swift */,
+				0036536F2408AB4600314783 /* SportsTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003653702408AB4600314783 /* SportsTableViewCell.swift in Sources */,
 				0036536124084F9900314783 /* SportModel.swift in Sources */,
 				0036534224084B1400314783 /* AppDelegate.swift in Sources */,
+				00365373240966FF00314783 /* GamesTableViewCell.swift in Sources */,
 				0036534424084B1400314783 /* SceneDelegate.swift in Sources */,
+				00365375240967C800314783 /* GamesTableViewController.swift in Sources */,
 				0036536E2408687D00314783 /* SportsTableController.swift in Sources */,
 				0036535F24084D9700314783 /* WeekTableViewController.swift in Sources */,
 			);
