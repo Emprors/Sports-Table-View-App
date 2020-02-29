@@ -13,7 +13,7 @@ class SportsTableViewController: UITableViewController{
     
     
     var leagues : [league]?
-    var currIndex: Int?
+    var currentIndex: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,14 +60,13 @@ class SportsTableViewController: UITableViewController{
         if let destinationVC = segue.destination as? GamesTableViewController {
             if let cell = sender as? UITableViewCell{
                 let index = tableView.indexPath(for: cell)
-                currIndex = index?.row
-                if let ArrayLeagues = leagues?[currIndex!], ArrayLeagues.name == "Hockey" {
-                    destinationVC.gamesContro = ArrayLeagues.games
-                    
-                } else if let ArrayLeagues = leagues?[currIndex!], ArrayLeagues.name == "Basketball" {
-                    destinationVC.gamesContro = ArrayLeagues.games
-                } else if let ArrayLeagues = leagues?[currIndex!], ArrayLeagues.name == "Baseball" {
-                    destinationVC.gamesContro = ArrayLeagues.games
+                currentIndex = index?.row
+                if let ArrayLeagues = leagues?[currentIndex!], ArrayLeagues.name == "Hockey" {
+                    destinationVC.gamesObject = ArrayLeagues.games
+                } else if let ArrayLeagues = leagues?[currentIndex!], ArrayLeagues.name == "Basketball" {
+                    destinationVC.gamesObject = ArrayLeagues.games
+                } else if let ArrayLeagues = leagues?[currentIndex!], ArrayLeagues.name == "Baseball" {
+                    destinationVC.gamesObject = ArrayLeagues.games
                 }
             }
             

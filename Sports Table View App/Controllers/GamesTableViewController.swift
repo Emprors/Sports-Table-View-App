@@ -9,22 +9,22 @@
 import UIKit
 class GamesTableViewController: UITableViewController {
     
-    var gamesContro: [game]?
+    var gamesObject: [game]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+  //MARK: - Data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return gamesContro?.count ?? 0
+        return gamesObject?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if gamesContro == nil {
+        if gamesObject == nil {
             return UITableViewCell()
         }
         
-        let game = gamesContro![indexPath.row]
+        let game = gamesObject![indexPath.row]
         guard  let cell = tableView.dequeueReusableCell(withIdentifier: "Games") as? GamesTableViewCell else {return UITableViewCell() }
         
                 if game.game_state == "Final" {
