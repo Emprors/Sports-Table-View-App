@@ -20,6 +20,7 @@
 		003653702408AB4600314783 /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036536F2408AB4600314783 /* SportsTableViewCell.swift */; };
 		00365375240967C800314783 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00365374240967C800314783 /* GamesTableViewController.swift */; };
 		0036537924096C3700314783 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036537824096C3700314783 /* GamesTableViewCell.swift */; };
+		0036537B240A0D8D00314783 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036537A240A0D8D00314783 /* DateConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0036536F2408AB4600314783 /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
 		00365374240967C800314783 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
 		0036537824096C3700314783 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
+		0036537A240A0D8D00314783 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0036536024084F9900314783 /* SportModel.swift */,
+				0036537A240A0D8D00314783 /* DateConverter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				003653702408AB4600314783 /* SportsTableViewCell.swift in Sources */,
 				0036536124084F9900314783 /* SportModel.swift in Sources */,
+				0036537B240A0D8D00314783 /* DateConverter.swift in Sources */,
 				0036534224084B1400314783 /* AppDelegate.swift in Sources */,
 				0036537924096C3700314783 /* GamesTableViewCell.swift in Sources */,
 				0036534424084B1400314783 /* SceneDelegate.swift in Sources */,

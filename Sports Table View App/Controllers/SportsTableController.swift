@@ -19,7 +19,7 @@ class SportsTableViewController: UITableViewController{
         super.viewDidLoad()
         
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return leagues?.count ?? 0
@@ -42,20 +42,14 @@ class SportsTableViewController: UITableViewController{
         return 100
     }
     
+//******** Method using to load data drom json file  *************
     func loadData(fileName: String) {
-        
         if let url = Bundle.main.url(forResource: fileName, withExtension: ".json"){
             do{
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(leagueData.self, from: data)
-                
                 leagues = jsonData.leagues
-            } catch
-                let DecodingError.keyNotFound(type, context)  {
-                    print("Type '\(type)' mismatch:", context.debugDescription)
-                    print("codingPath:", context.codingPath)
-                    
             } catch{
                 print(error)
             }
@@ -63,7 +57,6 @@ class SportsTableViewController: UITableViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if let destinationVC = segue.destination as? GamesTableViewController {
             if let cell = sender as? UITableViewCell{
                 let index = tableView.indexPath(for: cell)

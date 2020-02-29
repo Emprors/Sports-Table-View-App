@@ -32,6 +32,7 @@ class GamesTableViewController: UITableViewController {
                     cell.AwayScoreLabel.text = "\(game.visit_team_score ?? 0)"
                     cell.timeLabel.isHidden = true
                 } else {
+                    cell.timeLabel.text = DateConverter.dateConversion(using: game.game_time!)
                     cell.homeScoreLabel.isHidden = true
                     cell.AwayScoreLabel.isHidden = true
                     cell.timeLabel.isHidden = false
@@ -48,6 +49,3 @@ class GamesTableViewController: UITableViewController {
     
 }
 
-
-//        if let scoreHome = game.home_team_score, let scoreAway = game.visit_team_score {
-//            cell.gameState(homeScore: "\(scoreHome)", awayScore: "\(scoreAway)", game: game.game_state!)
