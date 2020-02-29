@@ -5,6 +5,8 @@
 CS 2680 – iOS Mobile Application Development
 Midterm Assignment – Sports Table View App
 Instructions
+
+
 Create an application that will allow the user to view a list of sports games read from a JSON file.
 The application will use a Navigation Controller to display three table views.
 - The first view will let the user choose a week
