@@ -1,6 +1,6 @@
 # Sports-Table-View-App
 
-This repository has the source code of my first Assignment for the SCS_2680_010 iOS Mobile Application Development 
+This repository has the source code of my the midterm project for the SCS_2680_010 iOS Mobile Application Development 
 inside Ontario Institute for Studies in Education - University of Toronto.
 
 
